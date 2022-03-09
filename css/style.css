@@ -1,34 +1,42 @@
 body {
     background: linear-gradient(white, lightblue);
-    font-family: "Tahoma", sans-serif;
-    display: grid;
+}
+
+#main,
+main,
+footer {
+    padding: 25px;
 }
 
 nav li {
-	background: skyblue;
-	padding:10px;
-	width: auto;
+    background: skyblue;
+    padding:10px;
+    width: auto;
     display: inline-block;
 }
 
 nav ul {
-    text-align: center;
+    text-align: right;
     font-size: 20px;
 }
 
+#main {
+    font-size: 45px;
+}
+
 p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Space Mono', 'serif';
     font-size: 1.5em;
 }
 
 h1{
-	font-size: 2em; 
-	font-weight: bold;
+    font-size: 2em; 
+    font-weight: bold;
 }
 
 img {
     width: 200px;
-    border: 3px solid #17BBFD;
+    /* border: 3px solid #17BBFD; */
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
@@ -36,8 +44,98 @@ img {
     align-items: center;
 }
 
-img:hover:nth-child(odd){
-    box-shadow: 12px 10px darkslategrey;
+.index {
+    display: grid;
+}
+
+.big_image img:hover{
+    box-shadow: 1px 2px darkslategrey;
     filter: grayscale(1);
   }
 
+
+/* Home */
+.big_image {
+    display: grid;
+    grid-template: 1fr;
+    justify-items: center;
+}
+
+.grid1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: large;
+    text-align: center;
+    padding: 15px 30px 70px 30px;
+}
+
+#main1 {
+    display: grid;
+    text-align: left;
+    overflow: hidden;
+    border-right: .15em solid skyblue;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .10em;
+    animation: 
+        typing 4.5s steps(50, end),
+        blink-caret 2s step-end infinite;
+    
+}
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+    }
+
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: skyblue; }
+    }
+
+
+/* About Me */
+.grid3 {
+    display: grid;
+}
+.aboutme {
+    display: grid;
+    background-image: url("../images/mobile-background.jpg");
+    align-content: center;
+}
+
+/* My Experiences */
+
+.grid2 {
+    display: flex;
+    grid-template-columns: 1fr;
+    flex-wrap: wrap;
+}
+
+.grid2 img:hover {
+    background-color:lightgrey;
+}
+
+.grid2 img {
+    align-items: stretch;
+}
+
+.resume {
+    grid-row: 4;
+}
+
+@media screen and (min-width: 720px){
+    p {
+        font-family: 'Verdana', 'serif';
+    }
+
+    .grid2 {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        text-align: left;
+    }
+
+    .grid2 div img{
+        background-image: url("../images/greyrectangle.png");
+    }
+}
