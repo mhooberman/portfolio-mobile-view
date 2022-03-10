@@ -1,11 +1,16 @@
 body {
     background: linear-gradient(white, lightblue);
+    min-height: 80vh;
 }
 
 #main,
 main,
 footer {
     padding: 25px;
+}
+
+#main {
+    display: none;
 }
 
 nav li {
