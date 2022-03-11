@@ -9,8 +9,9 @@ footer {
     padding: 25px;
 }
 
-#main {
-    display: none;
+footer {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 nav li {
@@ -22,7 +23,7 @@ nav li {
 }
 
 nav ul {
-    text-align: right;
+    text-align: center;
     font-size: 20px;
 }
 
@@ -109,12 +110,36 @@ img {
 
 /* About Me */
 .grid3 {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    flex-direction: column;
 }
+
 .aboutme {
-    display: grid;
+    text-align: center;
     background-image: url("../images/mobile-background.jpg");
-    align-content: center;
+    justify-content: center;
+}
+
+.home-life {
+    margin: 10px;
+    justify-content: right;
+}
+
+.passions {
+    margin: 10px;
+    justify-content: left;
+}
+
+.skills {
+    margin: 10px;
+    justify-content: right;
+}
+
+.future {
+    margin: 10px;
+    justify-content: left;
 }
 
 /* My Experiences */
@@ -151,5 +176,15 @@ img {
 
     .grid2 div img{
         background-image: url("../images/greyrectangle.png");
+    }
+
+    nav {
+        text-align: right;
+    }
+
+    nav ul {
+        display: inline-block;
+        width: auto;
+        justify-items: right;
     }
 }
