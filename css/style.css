@@ -1,5 +1,6 @@
 body {
-    background: linear-gradient(white, lightblue);
+    /* background: linear-gradiemt(white, lightblue); */
+    background: linear-gradient(lightblue, white, lightblue);
     min-height: 80vh;
 }
 
@@ -15,7 +16,8 @@ footer {
 }
 
 nav li {
-    background: skyblue;
+    /* background: skyblue; */
+    background: rgb(20, 120, 202);
     color: white;
     padding:10px;
     width: auto;
@@ -27,26 +29,35 @@ nav ul {
     font-size: 20px;
 }
 
+nav a {
+    color: white;
+}
+
 nav a:visited{
-    color:blue;
+    /* color:blue; */
+    color: white;
 }
 
 nav a:hover {
-    color: white;
+    /* color: white; */
+    color: black;
 }
 
 #main {
     font-size: 45px;
 }
 
-p {
+p,
+.grid2 li {
     font-family: 'Space Mono', 'serif';
-    font-size: 1.5em;
+    font-size: 1.2em;
+    margin: 10px;
 }
 
 h1{
     font-size: 2em; 
     font-weight: bold;
+    margin: 10px;
 }
 
 img {
@@ -162,8 +173,25 @@ img {
     grid-row: 4;
 }
 
+.grid2 li {
+    list-style-type: disc;
+    position: relative;
+    left: 30px;
+}
+
+.grid2 p {
+    position: relative;
+    left: 20px;
+}
+
+.grid2 h1 {
+    font-size: 3.5vh;
+}
+
+
 @media screen and (min-width: 720px){
-    p {
+    p,
+    .grid2 li {
         font-family: 'Verdana', 'serif';
     }
 
