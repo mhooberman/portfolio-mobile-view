@@ -188,10 +188,45 @@ img {
     font-size: 3.5vh;
 }
 
+/* Contact Me */
+
+/* FORM */
+input {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box; 
+  }
+
+  .form {
+    font-family: 'Space Mono', 'serif';
+  }
+
+#form_title {
+    padding: 30px 10px 10px 10px;
+    font-size: 30px;
+}
+
+#name,
+#email {
+    width: 40%;
+}
+
+#submit {
+    background-color: lightgrey;
+    color: blue;
+    font-family: 'Space Mono', 'serif';
+    font-size: 15px;
+}
+  
 
 @media screen and (min-width: 720px){
     p,
-    .grid2 li {
+    .grid2 li,
+    .form,
+    #submit {
         font-family: 'Verdana', 'serif';
     }
 
