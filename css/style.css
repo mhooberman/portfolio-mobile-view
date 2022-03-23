@@ -199,6 +199,19 @@ img {
 
 /* Contact Me */
 
+.imageLinks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#mail {
+    grid-column: 2 / 3;
+}
+
+#linkedIn {
+    grid-column: 3 / 4;
+}
+
 .container4 {
     display: flex;
     flex-direction: column;
