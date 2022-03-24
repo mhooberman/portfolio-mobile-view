@@ -139,12 +139,17 @@ h1#main.main1 {
     }
 }
 
+/* Prefers Reduced Motion */
 @media (prefers-reduced-motion){
     .main1 {
         animation-name: none;
     }
 
     #future {
+        animation-name: none;
+    }
+
+    .form {
         animation-name: none;
     }
 }
@@ -164,14 +169,14 @@ h1#main.main1 {
     justify-content: center;
 }
 
-/* 
+
 .home-life,
 .passions,
 .skills,
 .future {
-    margin: 10px;
+    margin: 5px;
     justify-content: left;
-} */
+}
 
 #fam,
 #twins,
