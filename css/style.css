@@ -29,7 +29,7 @@ nav ul {
     display: flex; 
     flex-direction: row;
     text-align: center;
-    justify-content: center;
+    justify-content: space-between;
     font-size: 20px;
     padding: 10px;
 }
@@ -98,7 +98,12 @@ img {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
+    align-content: center;
     width: 100%;
+}
+
+img.colorheadshot {
+    width: 60%;
 }
 
 .container1 {
@@ -138,6 +143,10 @@ h1#main.main1 {
     .main1 {
         animation-name: none;
     }
+
+    #future {
+        animation-name: none;
+    }
 }
 
 
@@ -155,26 +164,41 @@ h1#main.main1 {
     justify-content: center;
 }
 
-
-.home-life {
-    margin: 10px;
-    justify-content: right;
-}
-
-.passions {
-    margin: 10px;
-    justify-content: left;
-}
-
-.skills {
-    margin: 10px;
-    justify-content: right;
-}
-
+/* 
+.home-life,
+.passions,
+.skills,
 .future {
     margin: 10px;
     justify-content: left;
+} */
+
+#fam,
+#twins,
+#ttt,
+#exercise,
+#comm,
+#python,
+#future {
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    position: relative;
+    left: 90px;
+}    
+
+#future {
+    animation: rotation 2s infinite linear;
 }
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
 
 /* My Experiences */
 
