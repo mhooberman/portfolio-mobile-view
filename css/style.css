@@ -53,7 +53,8 @@ nav ul li.active {
 }
 
 .skip {
-    display: none;
+    position: absolute;
+    top: -40px;
 }
 
 #main {
